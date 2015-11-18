@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id='header'>
 
-<%= yield %>
-
+	</div>
+	<div id='mainframe'>
+		<div id='navigator'>
+			<nav id='interlink'>
+				<ul>
+					<li><%= link_to 'home', '#'%></li>
+					<li><%= link_to 'work', '#'%></li>
+					<li><%= link_to 'interest', '#'%></li>
+				</ul>
+			</nav>
+		</div>
+		<div id='frame'>
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>
