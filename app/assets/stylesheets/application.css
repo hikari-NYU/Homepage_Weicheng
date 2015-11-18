@@ -16,4 +16,15 @@
 
  #navigator{
  	float:left;
+ 	width:30%;
+ 	text-align: center;
+ 	font-size: 15px;
+ }
+
+ ul{
+ 	list-style-type: none;
+ }
+
+ ul li{
+ 	list-style-type: none;
  }
