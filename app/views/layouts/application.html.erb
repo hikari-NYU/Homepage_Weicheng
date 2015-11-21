@@ -7,15 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id='header'>
-		<%= render 'layouts/header' %>
-	</div>
-	<div id='mainframe'>
-		<div id='navigator'>
-			<%= render 'layouts/main_navigator' %>
+	<div id='page'>
+		<div id='header'>
+			<%= render 'layouts/header' %>
 		</div>
-		<div id='frame'>
-			<%= yield %>
+		<div id='mainframe'>
+			<div id='navigator'>
+				<%= render 'layouts/main_navigator' %>
+			</div>
+			<div id='frame'>
+				<%= yield %>
+			</div>
 		</div>
 	</div>
 </body>

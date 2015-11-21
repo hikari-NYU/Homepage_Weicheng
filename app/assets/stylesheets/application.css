@@ -15,10 +15,13 @@
  */
 
  body{
+ 	text-align: center;
+ }
+
+ #page{
  	width: 80%;
  	height: 90%;
  	border: 1px solid 00F;
- 	text-align: center;
  }
 
  #navigator{
