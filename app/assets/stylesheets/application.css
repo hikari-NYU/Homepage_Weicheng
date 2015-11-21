@@ -14,6 +14,13 @@
  *= require_self
  */
 
+ body{
+ 	width: 80%;
+ 	height: 90%;
+ 	border: 1px solid 00F;
+ 	text-align: center;
+ }
+
  #navigator{
  	float:left;
  	width:30%;
