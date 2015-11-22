@@ -74,13 +74,13 @@
  	height:90%;
  	width:60%;
  	left:10%;
- 	position: relative;
+ 	position: absolute;
  	top:20%;
  	text-align: center;
  	border: 1px solid #00F
  }
 
  #mainframe{
- 	height:900%;
+ 	height:90%;
  	position: relative;
  }
