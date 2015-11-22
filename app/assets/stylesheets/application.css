@@ -67,10 +67,14 @@
 
  #interlink ul{
  	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
  }
 
  #interlink ul li{
  	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
  }
 
  #frame{
