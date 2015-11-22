@@ -37,7 +37,7 @@
  #page{
  	width: 90%;
  	height: 90%;
- 	border: 0px solid #00F;
+ 	border: 1px solid #00F;
  }
 
  #navigator{
@@ -83,4 +83,5 @@
  #mainframe{
  	height:90%;
  	position: absolute;
+ 	border: 1px solid #FFF;
  }
