@@ -86,10 +86,11 @@
 
  #frame{
  	height:100%;
- 	width:80%;
+ 	width:78%;
  	position: relative;
  	float: inherit;
  	text-align: center;
+ 	margin-left: 2%;
  	border: 0px solid #00F
  }
 
