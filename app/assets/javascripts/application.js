@@ -15,8 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-var headLoad=function() {
-	alert('head loaded');
+window.onload()=function(){
+	for(var i=50;i>=0;i--){
+		$('#language').css('margin-right',i+'%');
+	}
+	alert('loaded');
 }
-
-export headLoad=headLoad;
