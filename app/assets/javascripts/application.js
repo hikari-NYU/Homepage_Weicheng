@@ -16,7 +16,5 @@
 //= require_tree .
 
 jQuery(window).load(function(){
-	for(var i=0;i<=40;i++){
-		$("#language").css("left",i+"%");
-	}
-})
+	$("#language").animate({"left":"40%"});
+});
