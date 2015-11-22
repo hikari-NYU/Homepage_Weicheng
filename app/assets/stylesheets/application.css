@@ -73,7 +73,7 @@
  #frame{
  	height:90%;
  	width:60%;
- 	left:10%;
+ 	left:30%;
  	position: absolute;
  	top:20%;
  	text-align: center;
@@ -82,5 +82,5 @@
 
  #mainframe{
  	height:90%;
- 	position: relative;
+ 	position: absolute;
  }
