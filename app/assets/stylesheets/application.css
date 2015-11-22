@@ -35,7 +35,7 @@
  }
 
  #page{
- 	width: 80%;
+ 	width: 90%;
  	height: 90%;
  	border: 1px solid #00F;
  }
@@ -64,4 +64,11 @@
 
  #interlink ul li{
  	list-style-type: none;
+ }
+
+ #frame{
+ 	height:90%;
+ 	width:60%;
+ 	text-align: center;
+ 	border: 1px solid #00F
  }
