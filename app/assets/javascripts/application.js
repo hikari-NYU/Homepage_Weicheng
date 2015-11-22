@@ -15,6 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-jQuery(window).load(function(){
+jQuery(window).ready(function(){
 	$("#language").animate({"left":"40%"});
 });
