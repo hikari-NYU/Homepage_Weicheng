@@ -52,12 +52,12 @@
  	float:inherit;
  	position: relative;
  	text-align: center;
- 	width:20%;
+ 	width:15%;
  	height:100%;
  	text-align: center;
  	font-family: times;
- 	font-size: 32px;
- 	background-color: gray;
+ 	font-size: 25px;
+ 	background-color: white;
  	margin-top: 0px;
  	margin-left: 0px;
  	padding: 0px,0px,0px,0px;
@@ -114,7 +114,7 @@
 
  #frame{
  	height:100%;
- 	width:80%;
+ 	width:85%;
  	position: relative;
  	float: inherit;
  	text-align: center;
