@@ -29,7 +29,7 @@
  	height: 20%;
  	background-size: 20% 100%;
  	margin-top: 20%;
- 	margin-bottom: 20%;
+ 	margin-bottom: 30%;
  	background-color: gray;
  }
 
@@ -58,6 +58,8 @@
  	margin-top: 0px;
  	margin-left: 0px;
  	padding: 0px,0px,0px,0px;
+ 	padding-top: 20%;
+ 	padding-bottom: 20%;
  	border: 0px;
  }
 
