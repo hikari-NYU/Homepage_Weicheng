@@ -22,8 +22,14 @@ jQuery(window).load(function(){
 							"opacity":"1.0"},"slow");
 	$("#interlink a").css("margin-top","0%");
 	$("#interlink a").css("margin-bottom","0%");
-	$("#interlink a").css("font-size","0px");
+	$("#interlink a").css("opacity","0.0");
 	$("#interlink a").animate({"marginTop":"35%",
 								"marginBottom":"30%",
-								"fontSize":"25px"},"slow");
+								"opacity":"1.0"},"slow");
+	$("#interlink a").animate({"marginTop":"20%",
+								"marginBottom":"10%",
+								"opacity":"1.0"},"slow");
+	$("#interlink a").animate({"marginTop":"35%",
+								"marginBottom":"30%",
+								"opacity":"1.0"},"slow");
 });
