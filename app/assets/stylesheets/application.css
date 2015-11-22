@@ -20,6 +20,15 @@
 
  a{
  	text-decoration: none;
+ 	display:block;
+ 	height: 30px;
+ 	width: 100%;
+ 	background-color: gray;
+ }
+
+ a:hover{
+ 	background-color: red;
+ 	font-size: 17px;
  }
 
  #page{
@@ -31,8 +40,10 @@
  #navigator{
  	float:left;
  	width:30%;
+ 	height:90%;
  	text-align: center;
  	font-size: 15px;
+ 	background-color: gray;
  }
 
  #header{
