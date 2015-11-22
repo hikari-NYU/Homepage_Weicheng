@@ -27,9 +27,11 @@ jQuery(window).load(function(){
 								"marginBottom":"30%",
 								"opacity":"1.0"},"slow");
 	$("#interlink a").animate({"marginTop":"20%",
-								"marginBottom":"10%",
-								"opacity":"1.0"},"slow");
+								"marginBottom":"10%"},"slow");
 	$("#interlink a").animate({"marginTop":"35%",
-								"marginBottom":"30%",
-								"opacity":"1.0"},"slow");
+								"marginBottom":"30%"},"slow");
+	$("#interlink a").animate({"marginTop":"26%",
+								"marginBottom":"16%"},"slow");
+	$("#interlink a").animate({"marginTop":"35%",
+								"marginBottom":"30%"},"slow");
 });
