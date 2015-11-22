@@ -16,6 +16,8 @@
 //= require_tree .
 
 jQuery(window).load(function(){
+	$("#language").css("opacity","0.0")
 	$("#language").css("left","0%")
-	$("#language").animate({"left":"40%"});
+	$("#language").animate({"left":"40%",
+							"opacity":"1.0"});
 });
