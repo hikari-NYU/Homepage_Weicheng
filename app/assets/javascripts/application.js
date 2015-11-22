@@ -22,6 +22,8 @@ jQuery(window).load(function(){
 							"opacity":"1.0"},"slow");
 	$("#interlink a").css("margin-top","0%");
 	$("#interlink a").css("margin-bottom","0%");
+	$("#interlink a").css("font-size","0px");
 	$("#interlink a").animate({"marginTop":"35%",
-								"marginBottom":"30%"},"slow");
+								"marginBottom":"30%",
+								"fontSize":"25px"},"slow");
 });
