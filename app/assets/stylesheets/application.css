@@ -114,11 +114,11 @@
 
  #frame{
  	height:100%;
- 	width:79%;
+ 	width:80%;
  	position: relative;
  	float: inherit;
  	text-align: center;
- 	margin-left: 1%;
+ 	margin-left: 0%;
  	border: 0px solid #00F;
  	background-color:red;
  }
