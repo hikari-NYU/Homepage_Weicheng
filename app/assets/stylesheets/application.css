@@ -42,7 +42,7 @@
  }
 
  #navigator{
- 	float:left;
+ 	float:inherit;
  	position: relative;
  	top:20%;
  	left:10%;
@@ -77,12 +77,14 @@
  	width:60%;
  	left:10%;
  	position: relative;
+ 	float: inherit;
  	top:20%;
  	text-align: center;
  	border: 1px solid #00F
  }
 
  #mainframe{
+ 	float: left;
  	height:70%;
  	position: relative;
  	border: 1px solid #FFF;
