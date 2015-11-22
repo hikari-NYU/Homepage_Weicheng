@@ -15,9 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-window.load()=function(){
+jQuery(window).load(function(){
 	for(var i=0;i<=40;i++){
 		$("#language").css("left",i+"%");
 	}
 	alert("loaded");
-}
+})
