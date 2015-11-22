@@ -37,7 +37,7 @@
  #page{
  	width: 90%;
  	height: 100%;
- 	left: 10%;
+ 	left: 5%;
  	border: 1px solid #000;
  	position: absolute;
  }
@@ -82,7 +82,6 @@
 
  #mainframe{
  	float: left;
- 	left: 10%;
  	height:80%;
  	position: absolute;
  	width: 100%;
