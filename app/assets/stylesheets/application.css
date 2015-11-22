@@ -69,6 +69,8 @@
  #frame{
  	height:90%;
  	width:60%;
+ 	position: relative;
+ 	left: 30%;
  	text-align: center;
  	border: 1px solid #00F
  }
