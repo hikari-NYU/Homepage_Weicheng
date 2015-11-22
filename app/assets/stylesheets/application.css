@@ -38,7 +38,7 @@
  	width: 90%;
  	height: 100%;
  	border: 1px solid #000;
- 	position: relative;
+ 	position: absolute;
  }
 
  #navigator{
