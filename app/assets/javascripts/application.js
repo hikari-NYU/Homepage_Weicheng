@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var headLoad=function() {
+	alert('head loaded');
+}
+
+export headLoad=headLoad;
