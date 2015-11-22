@@ -18,7 +18,7 @@
  	text-align: center;
  }
 
- a{
+ #interlink a{
  	position: inherit;
  	text-decoration: none;
  	display:block;
@@ -34,7 +34,7 @@
  	background-color: gray;
  }
 
- a:hover{
+ #interlink a:hover{
  	background-color: black;
  	font-size: 34px;
  	color: white;
