@@ -44,7 +44,6 @@
  #navigator{
  	float:inherit;
  	position: relative;
- 	left:10%;
  	text-align: center;
  	width:20%;
  	height:90%;
@@ -74,7 +73,6 @@
  #frame{
  	height:90%;
  	width:70%;
- 	left:10%;
  	position: relative;
  	float: inherit;
  	text-align: center;
