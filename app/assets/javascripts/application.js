@@ -17,7 +17,7 @@
 
 window.load()=function(){
 	for(var i=0;i<=40;i++){
-		$('#language').css('left',i+'%');
+		$("#language").css("left",i+"%");
 	}
-	alert('loaded');
+	alert("loaded");
 }
