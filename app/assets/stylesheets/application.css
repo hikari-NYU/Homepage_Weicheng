@@ -85,13 +85,33 @@
  	padding: 0;
  }
 
+ #language ul{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ #language ul li{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ #language{
+ 	font-size: 15px;
+ 	width: 30%;
+ 	position: inherit;
+ 	left: 70%;
+ 	bottom: 0%;
+ }
+
  #frame{
  	height:100%;
- 	width:78%;
+ 	width:79%;
  	position: relative;
  	float: inherit;
  	text-align: center;
- 	margin-left: 2%;
+ 	margin-left: 1%;
  	border: 0px solid #00F;
  	background-color:red;
  }
