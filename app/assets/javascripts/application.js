@@ -15,9 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-window.onload()=function(){
-	for(var i=50;i>=0;i--){
-		$('#language').css('margin-right',i+'%');
+window.ready()=function(){
+	for(var i=0;i<=40;i++){
+		$('#language').css('left',i+'%');
 	}
 	alert('loaded');
 }
