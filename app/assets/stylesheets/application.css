@@ -47,7 +47,7 @@
  	position: relative;
  	text-align: center;
  	width:20%;
- 	height:90%;
+ 	height:100%;
  	text-align: center;
  	font-size: 15px;
  	background-color: gray;
@@ -72,8 +72,8 @@
  }
 
  #frame{
- 	height:90%;
- 	width:78%;
+ 	height:100%;
+ 	width:80%;
  	position: relative;
  	float: inherit;
  	text-align: center;
