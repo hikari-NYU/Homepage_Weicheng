@@ -20,4 +20,8 @@ jQuery(window).load(function(){
 	$("#language").css("left","0%")
 	$("#language").animate({"left":"40%",
 							"opacity":"1.0"},"slow");
+	$("#interlink a").css("margin-top","0%");
+	$("#interlink a").css("margin-bottom","0%");
+	$("#interlink a").animate({"marginTop":"35%",
+								"marginBottom":"30%"},"slow");
 });
