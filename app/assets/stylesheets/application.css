@@ -97,12 +97,19 @@
  	padding: 0;
  }
 
+ #lang_link a{
+ 	display: block;
+ 	text-decoration: none;
+ 	margin-left: 1%;
+ 	color: black;
+ }
+
  #language{
  	font-size: 15px;
  	width: 30%;
  	position: inherit;
  	left:40%;
- 	top:60%;
+ 	top:70%;
  	bottom: 0%;
  }
 
