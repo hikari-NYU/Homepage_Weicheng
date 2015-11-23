@@ -123,7 +123,7 @@
  	padding:0px;
  	left:25%;
  	background-color:blue;
- 	z-index: 2;
+ 	z-index: 4;
  }
 
  #load_cover{
@@ -134,7 +134,6 @@
  	float: inherit;
  	left:0;
  	z-index: 3;
- 	background-color: black;
  }
 
  #mainframe{
