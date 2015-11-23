@@ -50,7 +50,7 @@
 
  #navigator{
  	float:inherit;
- 	position: relative;
+ 	position: fixed;
  	text-align: center;
  	width:15%;
  	height:100%;
@@ -63,6 +63,7 @@
  	border: 0px;
  	border-radius: 0 25px 25px 0;
  	opacity: 50%;
+ 	z-index: 100;
  }
 
  #header{
@@ -124,6 +125,8 @@
  }
 
  #load_cover{
+ 	height: 100%;
+ 	width: 100%;
  	position: inherit;
  	float: inherit;
  	background-color: black;
