@@ -120,15 +120,12 @@
  	margin-left: 0%;
  	border: 0px solid #00F;
  	background-color:white;
- 	z-index: 4;
+ 	z-index: 2;
  }
 
  #load_cover{
- 	height:100%;
- 	width:85%;
  	position: inherit;
  	float: inherit;
- 	margin-left: 0%;
  	background-color: black;
  	z-index: 3;
  }
