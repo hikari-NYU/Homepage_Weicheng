@@ -120,6 +120,7 @@
  	text-align: center;
  	margin-left: 0%;
  	border: 0px solid #00F;
+ 	padding:0px;
  	background-color:white;
  	z-index: 2;
  }
@@ -127,8 +128,10 @@
  #load_cover{
  	height: 100%;
  	width: 85%;
+ 	margin: 0px;
  	position: inherit;
  	float: inherit;
+ 	left:0px;
  	background-color: black;
  	z-index: 3;
  }
