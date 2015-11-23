@@ -134,6 +134,7 @@
  	float: inherit;
  	left:20%;
  	z-index: 3;
+ 	background-color: white;
  }
 
  #mainframe{
