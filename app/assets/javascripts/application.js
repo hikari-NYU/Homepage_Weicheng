@@ -32,7 +32,7 @@ jQuery(window).load(function(){
 $(document).on('click','#home_link',function (event){
 	var source=document.getElementById('title').innerText;
 	source=source.substring(0,source.indexOf('|'));
-	var destination="home";
+	var destination="Home";
 	$('#load_cover').css("opacity","1.0");
 	$('#load_cover').css("backgroundColor","white");
 	var msg="> Leaving "+source+"; Heading "+destination;
