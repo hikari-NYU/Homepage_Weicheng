@@ -29,7 +29,7 @@ jQuery(window).load(function(){
 });
 
 
-$('#home_link').live(click,function (event){
+$('#home_link').live('click',function (event){
 	var source=document.getElementById('home_link').innerText;
 	var destination="home";
 	alert('leaving '+source);
