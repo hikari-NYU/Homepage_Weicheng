@@ -30,7 +30,7 @@ jQuery(window).load(function(){
 
 
 $('#home_link').live(click,function (event){
-	var source=yield(:title);
+	var source=document.getElementById('home_link').innerText;
 	var destination="home";
 	alert('leaving '+source);
 	$('#load_cover').css("opacity","0.7");
