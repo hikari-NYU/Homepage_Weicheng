@@ -27,3 +27,16 @@ jQuery(window).load(function(){
 								"marginBottom":"30%",
 								"opacity":"1.0"},"slow");
 });
+
+function intermission(source,destination){
+	$('#load_cover').css("opacity","0.7");
+	msg="> Leaving "+source+"; Heading "+destination;
+	val i=0;
+	val id=setInterval(function() {
+		sub=msg.slice(0,i);
+		i=i+1;
+		if(i==msg.length) {
+			clearInterval(id);
+		}
+	},300)
+}

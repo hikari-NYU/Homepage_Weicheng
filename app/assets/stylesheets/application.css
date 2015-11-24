@@ -122,7 +122,7 @@
  	border: 0px solid #00F;
  	padding:0px;
  	left:20%;
- 	background-color:blue;
+ 	background-color:white;
  	z-index: 2;
  }
 
@@ -133,6 +133,7 @@
  	position: inherit;
  	float: inherit;
  	left:0;
+ 	opacity: 0.0;
  	z-index: 3;
  }
 
