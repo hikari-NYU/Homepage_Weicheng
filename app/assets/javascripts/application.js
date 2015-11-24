@@ -28,8 +28,8 @@ jQuery(window).load(function(){
 								"opacity":"1.0"},"slow");
 });
 
-$('home_link').click(function intermission(event){
-	
+$('#home_link').click(function intermission(event){
+
 	event.preventDefault();
 	source=yield(:title);
 	destination="home";
