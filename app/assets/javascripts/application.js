@@ -16,8 +16,8 @@
 //= require_tree .
 
 jQuery(window).load(function(){
-	$("#language").css("opacity","0.0")
-	$("#language").css("left","0%")
+	$("#language").css("opacity","0.0");
+	$("#language").css("left","0%");
 	$("#language").animate({"left":"40%",
 							"opacity":"1.0"},"slow");
 	$("#interlink a").css("margin-top","0%");
@@ -30,13 +30,13 @@ jQuery(window).load(function(){
 
 
 $('#home_link').live(click,function (event){
-	source=yield(:title);
-	destination="home";
+	var source=yield(:title);
+	var destination="home";
 	alert('leaving '+source);
 	$('#load_cover').css("opacity","0.7");
-	msg="> Leaving "+source+"; Heading "+destination;
-	val i=0;
-	val id=setInterval(function() {
+	var msg="> Leaving "+source+"; Heading "+destination;
+	var i=0;
+	var id=setInterval(function() {
 		sub=msg.slice(0,i);
 		i=i+1;
 		if(i==msg.length) {
