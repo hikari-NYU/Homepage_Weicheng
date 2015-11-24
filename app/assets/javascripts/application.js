@@ -28,7 +28,7 @@ jQuery(window).load(function(){
 								"opacity":"1.0"},"slow");
 });
 
-$('home_link').click(function intermission(){
+$('home_link').click(function intermission(event){
 	source=yield(:title);
 	destination="home";
 	alert('leaving '+source);
@@ -42,4 +42,5 @@ $('home_link').click(function intermission(){
 			clearInterval(id);
 		}
 	},300)
+	event.preventDefault();
 });
