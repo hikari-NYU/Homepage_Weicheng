@@ -39,4 +39,4 @@ function intermission(source,destination){
 			clearInterval(id);
 		}
 	},300)
-}
+};
