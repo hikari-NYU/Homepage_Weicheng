@@ -31,6 +31,7 @@ jQuery(window).load(function(){
 $('home_link').click(function intermission(){
 	source=yield(:title);
 	destination="home";
+	alert('leaving '+source);
 	$('#load_cover').css("opacity","0.7");
 	msg="> Leaving "+source+"; Heading "+destination;
 	val i=0;
