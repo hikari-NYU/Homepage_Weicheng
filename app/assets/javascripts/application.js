@@ -29,6 +29,8 @@ jQuery(window).load(function(){
 });
 
 $('home_link').click(function intermission(event){
+	
+	event.preventDefault();
 	source=yield(:title);
 	destination="home";
 	alert('leaving '+source);
@@ -42,5 +44,4 @@ $('home_link').click(function intermission(event){
 			clearInterval(id);
 		}
 	},300)
-	event.preventDefault();
 });
