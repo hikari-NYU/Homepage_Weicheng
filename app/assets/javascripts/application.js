@@ -48,5 +48,4 @@ $(document).on('click','#home_link',function (event){
 			clearInterval(id);
 		}
 	},30);
-	event.preventDefault();
 });
