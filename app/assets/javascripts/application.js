@@ -46,7 +46,7 @@ $(document).on('click','#home_link',function (event){
 		i=i+1;
 		if(i>msg.length) {
 			clearInterval(id);
-			window.location="home#index";
+			window.location="index";
 		}
 	},30);
 	event.preventDefault();
