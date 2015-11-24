@@ -32,7 +32,6 @@ jQuery(window).load(function(){
 $(document).on('click','#home_link',function (event){
 	var source=document.getElementById('home_link').innerText;
 	var destination="home";
-	alert('leaving '+source);
 	$('#load_cover').css("opacity","0.7");
 	var msg="> Leaving "+source+"; Heading "+destination;
 	var i=0;
