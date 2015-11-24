@@ -28,7 +28,9 @@ jQuery(window).load(function(){
 								"opacity":"1.0"},"slow");
 });
 
-function intermission(source,destination){
+$('home_link').click(function intermission(){
+	source=yield(:title);
+	destination="home";
 	$('#load_cover').css("opacity","0.7");
 	msg="> Leaving "+source+"; Heading "+destination;
 	val i=0;
@@ -39,4 +41,4 @@ function intermission(source,destination){
 			clearInterval(id);
 		}
 	},300)
-};
+});
