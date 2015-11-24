@@ -49,5 +49,5 @@ $(document).on('click','#home_link',function (event){
 		}
 	},30);
 	event.preventDefault();
-	window.location.href = "home_link";
+	window.location.href = "home";
 });
