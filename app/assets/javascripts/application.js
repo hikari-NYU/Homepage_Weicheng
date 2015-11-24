@@ -29,7 +29,7 @@ jQuery(window).load(function(){
 });
 
 
-$('#home_link').click(function (event){
+$('#home_link').live(click,function (event){
 	source=yield(:title);
 	destination="home";
 	alert('leaving '+source);
