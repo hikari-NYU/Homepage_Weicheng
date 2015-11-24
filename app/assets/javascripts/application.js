@@ -30,7 +30,7 @@ jQuery(window).load(function(){
 
 
 $(document).on('click','#home_link',function (event){
-	var source=document.getElementById('home_link').innerText;
+	var source=document.getElementById('title').innerText;
 	var destination="home";
 	$('#load_cover').css("opacity","1.0");
 	$('#load_cover').css("backgroundColor","white");
