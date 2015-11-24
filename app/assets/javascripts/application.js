@@ -37,7 +37,7 @@ $(document).on('click','#home_link',function (event){
 	var i=0;
 	var c = document.getElementById("load_cover");
 	var ctx = c.getContext("2d");
-	ctx.font = "30px Arial";
+	ctx.font = "15px Arial";
 	var id=setInterval(function() {
 		sub=msg.slice(0,i);
 		ctx.fillText(sub,10,50);
@@ -45,6 +45,6 @@ $(document).on('click','#home_link',function (event){
 		if(i==msg.length) {
 			clearInterval(id);
 		}
-	},300);
+	},30);
 	event.preventDefault();
 });
