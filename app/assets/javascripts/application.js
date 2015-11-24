@@ -38,12 +38,12 @@ $(document).on('click','#home_link',function (event){
 	var i=0;
 	var c = document.getElementById("load_cover");
 	var ctx = c.getContext("2d");
-	ctx.font = "5px Arial";
+	ctx.font = "5px Times";
 	var id=setInterval(function() {
 		sub=msg.slice(0,i);
 		ctx.fillText(sub,10,50);
 		i=i+1;
-		if(i==msg.length) {
+		if(i>msg.length) {
 			clearInterval(id);
 		}
 	},30);
