@@ -15,9 +15,21 @@
 //= require turbolinks
 //= require_tree .
 
+jQuery(window).load(function(){
+	$("#language").css("opacity","0.0")
+	$("#language").css("left","0%")
+	$("#language").animate({"left":"40%",
+							"opacity":"1.0"},"slow");
+	$("#interlink a").css("margin-top","0%");
+	$("#interlink a").css("margin-bottom","0%");
+	$("#interlink a").css("opacity","0.0");
+	$("#interlink a").animate({"marginTop":"35%",
+								"marginBottom":"30%",
+								"opacity":"1.0"},"slow");
+});
+
 
 $('#home_link').click(function (event){
-	event.preventDefault();
 	source=yield(:title);
 	destination="home";
 	alert('leaving '+source);
@@ -30,5 +42,6 @@ $('#home_link').click(function (event){
 		if(i==msg.length) {
 			clearInterval(id);
 		}
-	},300)
+	},300);
+	event.preventDefault();
 });
