@@ -1,6 +1,6 @@
 			<nav id='interlink'>
 				<ul>
-					<li><%= link_to 'Home', index_path, :id=>'home_link', :onclick=>'intermission('+"yield(:title)"+','+"Home"+')'%></li>
+					<li><%= link_to 'Home', index_path, :id=>'home_link', :onclick=>'intermission('+yield(:title)+','+"Home"+')'%></li>
 					<li><%= link_to 'Work', work_path%></li>
 					<li><%= link_to 'Interest', interest_path%></li>
 				</ul>
