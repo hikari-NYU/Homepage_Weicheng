@@ -32,7 +32,8 @@ jQuery(window).load(function(){
 $(document).on('click','#home_link',function (event){
 	var source=document.getElementById('home_link').innerText;
 	var destination="home";
-	$('#load_cover').css("opacity","0.7");
+	$('#load_cover').css("opacity","1.0");
+	$('#load_cover').css("backgroundColor","white");
 	var msg="> Leaving "+source+"; Heading "+destination;
 	var i=0;
 	var c = document.getElementById("load_cover");
