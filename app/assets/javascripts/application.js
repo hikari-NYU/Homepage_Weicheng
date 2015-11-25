@@ -50,7 +50,7 @@ $(document).on('click','#home_link',function (event){
 			var j=0;
 			var sid=setInterval(function() {
 				j=j+1;
-				if(j>1) {
+				if(j>2) {
 					clearInterval(sid);
 				}
 			},1000);
