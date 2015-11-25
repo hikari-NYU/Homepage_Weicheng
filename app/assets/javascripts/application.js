@@ -53,7 +53,7 @@ $(document).on('click','#home_link',function (event){
 				if(j>1) {
 					clearInterval(sid);
 				}
-			})
+			},1000);
 			window.location="index";
 		}
 	},30);
