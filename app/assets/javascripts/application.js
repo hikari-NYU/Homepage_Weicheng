@@ -45,12 +45,12 @@ $(document).on('click','#home_link',function (event){
 		ctx.fillText(sub,10,50);
 		i=i+1;
 		if(i>msg.length) {
-			clearInterval(id);
-			$('#load_cover').css("opacity","0.0");
 			var j=0;
 			var sid=setInterval(function() {
 				j=j+1;
 				if(j>2) {
+					clearInterval(id);
+					$('#load_cover').css("opacity","0.0");
 					window.location="index";
 					clearInterval(sid);
 				}
