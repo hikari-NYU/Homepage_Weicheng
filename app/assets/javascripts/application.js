@@ -50,8 +50,8 @@ $(document).on('click','#home_link',function (event){
 				j=j+1;
 				if(j>1) {
 					clearInterval(id);
-					$('#load_cover').css("opacity","0.0");
 					window.location="index";
+					$('#load_cover').css("opacity","0.0");
 					clearInterval(sid);
 				}
 			},1000);
