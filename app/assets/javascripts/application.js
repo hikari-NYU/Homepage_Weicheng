@@ -51,10 +51,10 @@ $(document).on('click','#home_link',function (event){
 			var sid=setInterval(function() {
 				j=j+1;
 				if(j>2) {
+					window.location="index";
 					clearInterval(sid);
 				}
 			},1000);
-			window.location="index";
 		}
 	},30);
 	event.preventDefault();
