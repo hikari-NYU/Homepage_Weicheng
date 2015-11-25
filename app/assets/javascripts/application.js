@@ -46,6 +46,14 @@ $(document).on('click','#home_link',function (event){
 		i=i+1;
 		if(i>msg.length) {
 			clearInterval(id);
+			$('#load_cover').css("opacity","0.0");
+			var j=0;
+			var sid=setInterval(function() {
+				j=j+1;
+				if(j>1) {
+					clearInterval(sid);
+				}
+			})
 			window.location="index";
 		}
 	},30);
