@@ -51,8 +51,8 @@ $(document).on('click','#home_link',function (event){
 				if(j>1) {
 					clearInterval(id);
 					window.location="index";
-					$('#load_cover').css("opacity","0.0");
 					clearInterval(sid);
+					$('#load_cover').css("opacity","0.0");
 				}
 			},1000);
 		}
