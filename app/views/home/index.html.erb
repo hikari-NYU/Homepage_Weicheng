@@ -1,13 +1,13 @@
 <% provide(:title, "Home") %>
 
-<div id="full_name">Weicheng Ma</div>
+<div id="full_name"><% get_name(:language) %></div>
 <div id="contact">
 	<ul id="contact_info">
-		<li>City University of New York</li>
-		<li>Email: weicheng.ma1991@gmail.com</li>
-		<li>Phone: +1(347)933-3468</li>
+		<li><% get_university(:language) %></li>
+		<li><% get_email(:language) %></li>
+		<li><% get_phone(:language) %></li>
 	</ul>
 </div>
 <div id="profile">
-	My research interest lie mainly on the intersection of Natural Language Processing, Information Retrieval, Data Mining and Machine Learning, especially for problem solving with a combination of multiple areas. 
+	<% get_intro(:language) %> 
 </div>

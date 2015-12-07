@@ -6,6 +6,7 @@ class CreateSelfIntros < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.string :intro
+      t.string :lang
 
       t.timestamps null: false
     end
