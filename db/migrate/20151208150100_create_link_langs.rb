@@ -3,7 +3,7 @@ class CreateLinkLangs < ActiveRecord::Migration
     create_table :link_langs do |t|
       t.string :link
       t.string :lang
-      t.string :type
+      t.string :types
 
       t.timestamps null: false
     end
