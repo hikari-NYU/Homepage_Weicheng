@@ -31,6 +31,18 @@ module HomeHelper
 			@@conn.exec("SELECT intro from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
 		end
 
+		def get_link_home()
+			@@conn.exec("SELECT link from links where lang='"+$langUsed.to_s+"' and type='home';").getvalue(0,0)
+		end
+
+		def get_link_work()
+			@@conn.exec("SELECT link from links where lang='"+$langUsed.to_s+"' and type='work';").getvalue(0,0)
+		end
+
+		def get_link_interest()
+			@@conn.exec("SELECT link from links where lang='"+$langUsed.to_s+"' and type='interest';").getvalue(0,0)
+		end
+
 		def switch_lang(lang)
 			$langUsed=lang
 		end

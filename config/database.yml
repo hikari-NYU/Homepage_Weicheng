@@ -25,6 +25,10 @@ production:
   host: ec2-54-83-199-54.compute-1.amazonaws.com
   username: jbjbqbyqjusvmh
   password: 70PJIlZRHxxARB41NDtcjMwG6n
+  #host: localhost
+  #username: weicheng
+  #password: hikariTGpass1
+  #database: weicheng_home
   timeout: 5000
 
 development:
@@ -37,4 +41,8 @@ development:
   host: ec2-54-83-199-54.compute-1.amazonaws.com
   username: jbjbqbyqjusvmh
   password: 70PJIlZRHxxARB41NDtcjMwG6n
+  #host: localhost
+  #username: weicheng
+  #password: hikariTGpass1
+  #database: weicheng_home
   timeout: 5000

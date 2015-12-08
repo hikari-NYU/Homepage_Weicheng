@@ -1,7 +1,7 @@
 			<nav id='interlink'>
 				<ul>
-					<li><%= link_to 'Home', index_path, :id=>'home_link'%></li>
-					<li><%= link_to 'Work', work_path, :id=>'work_link'%></li>
-					<li><%= link_to 'Interest', interest_path, :id=>'interest_link'%></li>
+					<li><%= link_to get_link_home(), index_path, :id=>'home_link'%></li>
+					<li><%= link_to get_link_work(), work_path, :id=>'work_link'%></li>
+					<li><%= link_to get_link_interest(), interest_path, :id=>'interest_link'%></li>
 				</ul>
 			</nav>
