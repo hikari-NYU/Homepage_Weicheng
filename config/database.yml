@@ -21,7 +21,7 @@ production:
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  database: d9tupv30f674g0
+  database: postgres://jbjbqbyqjusvmh:70PJIlZRHxxARB41NDtcjMwG6n@ec2-54-83-199-54.compute-1.amazonaws.com:5432/d9tupv30f674g0
   host: ec2-54-83-199-54.compute-1.amazonaws.com
   username: jbjbqbyqjusvmh
   password: 70PJIlZRHxxARB41NDtcjMwG6n
@@ -33,7 +33,7 @@ development:
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  database: d9tupv30f674g0
+  database: postgres://jbjbqbyqjusvmh:70PJIlZRHxxARB41NDtcjMwG6n@ec2-54-83-199-54.compute-1.amazonaws.com:5432/d9tupv30f674g0
   host: ec2-54-83-199-54.compute-1.amazonaws.com
   username: jbjbqbyqjusvmh
   password: 70PJIlZRHxxARB41NDtcjMwG6n
