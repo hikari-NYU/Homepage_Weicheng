@@ -1,9 +1,9 @@
 <div id='language'>
 	<nav id='lang_link'>
 		<ul>
-			<%= link_to 'English', '#', :language=>'English'%>
-			<%= link_to '中文', '#', :language=>'Chinese'%>
-			<%= link_to '日本語', '#', :language=>'Japanese'%>
+			<%= link_to 'English', request.url+'English', :lang=>'English', :class=>'lang'%>
+			<%= link_to '中文', request.url+'Chinese', :lang=>'Chinese', :class=>'lang'%>
+			<%= link_to '日本語', request.url+'Japanese', :lang=>'Japanese', :class=>'lang'%>
 		</ul>
 	</nav>
 </div>

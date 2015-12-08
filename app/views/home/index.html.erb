@@ -1,13 +1,13 @@
 <% provide(:title, "Home") %>
 
-<div id="full_name"><% get_name(:language) %></div>
+<div id="full_name"><%= get_name() %></div>
 <div id="contact">
 	<ul id="contact_info">
-		<li><% get_university(:language) %></li>
-		<li><% get_email(:language) %></li>
-		<li><% get_phone(:language) %></li>
+		<li><%= get_university() %></li>
+		<li><%= get_email() %></li>
+		<li><%= get_phone() %></li>
 	</ul>
 </div>
 <div id="profile">
-	<% get_intro(:language) %> 
+	<%= get_intro() %> 
 </div>

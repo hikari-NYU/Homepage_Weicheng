@@ -17,7 +17,19 @@
 #
 production:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  database: weicheng_home
+  host: localhost
+  username: weicheng
+  password: hikariTGpass1
+  timeout: 5000
+
+development:
+  adapter: postgresql
+  encoding: utf8
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
