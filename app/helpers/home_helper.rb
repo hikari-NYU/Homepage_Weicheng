@@ -32,15 +32,15 @@ module HomeHelper
 		end
 
 		def get_link_home()
-			@@conn.exec("SELECT link from link_lang where lang='"+$langUsed.to_s+"' and type='home';").getvalue(0,0)
+			@@conn.exec("SELECT link from link_lang where lang='"+$langUsed.to_s+"' and types='home';").getvalue(0,0)
 		end
 
 		def get_link_work()
-			@@conn.exec("SELECT link from link_lang where lang='"+$langUsed.to_s+"' and type='work';").getvalue(0,0)
+			@@conn.exec("SELECT link from link_lang where lang='"+$langUsed.to_s+"' and types='work';").getvalue(0,0)
 		end
 
 		def get_link_interest()
-			@@conn.exec("SELECT link from link_lang where lang='"+$langUsed.to_s+"' and type='interest';").getvalue(0,0)
+			@@conn.exec("SELECT link from link_lang where lang='"+$langUsed.to_s+"' and types='interest';").getvalue(0,0)
 		end
 
 		def switch_lang(lang)
