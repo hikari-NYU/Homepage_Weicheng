@@ -11,27 +11,27 @@ module HomeHelper
 
 		$langUsed="English"
 		def get_name()
-			conn=PGconn.open(:dbname => 'weicheng_home', :host => 'localhost', :port => 5432,:user => 'weicheng' , :password => 'hikariTGpass1')
+			conn=PGconn.open(:dbname => 'd9tupv30f674g0', :host => 'ec2-54-83-199-54.compute-1.amazonaws.com', :port => 5432,:user => 'jbjbqbyqjusvmh' , :password => '70PJIlZRHxxARB41NDtcjMwG6n')
 			conn.exec("SELECT name from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
 		end
 
 		def get_university()
-			conn=PGconn.open(:dbname => 'weicheng_home', :host => 'localhost', :port => 5432,:user => 'weicheng' , :password => 'hikariTGpass1')
+			conn=PGconn.open(:dbname => 'd9tupv30f674g0', :host => 'ec2-54-83-199-54.compute-1.amazonaws.com', :port => 5432,:user => 'jbjbqbyqjusvmh' , :password => '70PJIlZRHxxARB41NDtcjMwG6n')
 			conn.exec("SELECT university from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
 		end
 
 		def get_email()
-			conn=PGconn.open(:dbname => 'weicheng_home', :host => 'localhost', :port => 5432,:user => 'weicheng' , :password => 'hikariTGpass1')
+			conn=PGconn.open(:dbname => 'd9tupv30f674g0', :host => 'ec2-54-83-199-54.compute-1.amazonaws.com', :port => 5432,:user => 'jbjbqbyqjusvmh' , :password => '70PJIlZRHxxARB41NDtcjMwG6n')
 			conn.exec("SELECT email from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
 		end
 
 		def get_phone()
-			conn=PGconn.open(:dbname => 'weicheng_home', :host => 'localhost', :port => 5432,:user => 'weicheng' , :password => 'hikariTGpass1')
+			conn=PGconn.open(:dbname => 'd9tupv30f674g0', :host => 'ec2-54-83-199-54.compute-1.amazonaws.com', :port => 5432,:user => 'jbjbqbyqjusvmh' , :password => '70PJIlZRHxxARB41NDtcjMwG6n')
 			conn.exec("SELECT phone from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
 		end
 
 		def get_intro()
-			conn=PGconn.open(:dbname => 'weicheng_home', :host => 'localhost', :port => 5432,:user => 'weicheng' , :password => 'hikariTGpass1')
+			conn=PGconn.open(:dbname => 'd9tupv30f674g0', :host => 'ec2-54-83-199-54.compute-1.amazonaws.com', :port => 5432,:user => 'jbjbqbyqjusvmh' , :password => '70PJIlZRHxxARB41NDtcjMwG6n')
 			conn.exec("SELECT intro from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
 		end
 
