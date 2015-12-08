@@ -3,9 +3,9 @@
 one:
   link: MyString
   lang: MyString
-  type: 
+  types: MyString
 
 two:
   link: MyString
   lang: MyString
-  type: 
+  types: MyString
