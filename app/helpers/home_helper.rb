@@ -19,25 +19,16 @@ module HomeHelper
 		@@link_work=nil
 		@@link_interest=nil
 
-		def connect()
-			PGconn.open(:dbname => 'd9tupv30f674g0', :host => 'ec2-54-83-199-54.compute-1.amazonaws.com', :port => 5432,:user => 'jbjbqbyqjusvmh' , :password => '70PJIlZRHxxARB41NDtcjMwG6n')
-		end
-
-		def close(conn)
-			conn.close()
-		end
-
 		def initializer()
-			conn=connect()
-			@@name=conn.exec("SELECT name from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
-			@@university=conn.exec("SELECT university from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
-			@@email=conn.exec("SELECT email from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
-			@@phone=conn.exec("SELECT phone from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
-			@@intro=conn.exec("SELECT intro from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0)
-			@@link_home=conn.exec("SELECT link from link_langs where lang='"+$langUsed.to_s+"' and types='home';").getvalue(0,0)
-			@@link_work=conn.exec("SELECT link from link_langs where lang='"+$langUsed.to_s+"' and types='work';").getvalue(0,0)
-			@@link_interest=conn.exec("SELECT link from link_langs where lang='"+$langUsed.to_s+"' and types='interest';").getvalue(0,0)
-			close(conn)
+			intromod=SelfIntro.where("lang="+$langUsed.to_s)
+			@@name=intromod.name
+			@@university=intromod.university
+			@@email=intromod.email
+			@@phone=intromod.phone
+			@@intro=intromod.intro
+			@@link_home=LinkLang.where("lang="+$langUsed.to_s+" and types='home'").link
+			@@link_work=LinkLang.where("lang="+$langUsed.to_s+" and types='work'").link
+			@@link_interest=LinkLang.where("lang="+$langUsed.to_s+" and types='interest'").link
 		end
 
 		def get_name()
