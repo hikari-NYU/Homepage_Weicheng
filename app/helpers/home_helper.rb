@@ -98,5 +98,6 @@ module HomeHelper
 
 		def switch_lang(lang)
 			$langUsed=lang
+			@@name=nil
 		end
 end
