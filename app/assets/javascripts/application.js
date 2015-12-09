@@ -44,7 +44,7 @@ $(document).on('click','#home_link',function (event){
 				j=j+1;
 				if(j==1) {
 					clearInterval(id);
-					window.location="home";
+					window.location="index";
 				}
 				if(j>1) {
 					$('#load_cover').css("opacity","0.0");
