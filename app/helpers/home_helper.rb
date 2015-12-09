@@ -28,7 +28,7 @@ module HomeHelper
 		end
 
 		def get_intro()
-			simple_format(@@conn.exec("SELECT intro from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0))
+			@@conn.exec("SELECT intro from self_intros where lang='"+$langUsed.to_s+"';").getvalue(0,0).to_s
 		end
 
 		def get_link_home()
