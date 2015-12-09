@@ -44,7 +44,7 @@ $(document).on('click','#home_link',function (event){
 				j=j+1;
 				if(j==1) {
 					clearInterval(id);
-					window.location="work";
+					window.location="home";
 				}
 				if(j>1) {
 					$('#load_cover').css("opacity","0.0");
@@ -110,7 +110,7 @@ $(document).on('click','#interest_link',function (event){
 				j=j+1;
 				if(j==1) {
 					clearInterval(id);
-					window.location="work";
+					window.location="interest";
 				}
 				if(j>1) {
 					$('#load_cover').css("opacity","0.0");
