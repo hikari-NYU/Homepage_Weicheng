@@ -20,15 +20,15 @@ module HomeHelper
 		@@link_interest=nil
 
 		def initializer()
-			intromod=SelfIntro.where("lang='"+$langUsed.to_s+"'")
+			intromod=SelfIntro.where("lang='"+$langUsed.to_s+"'")[0]
 			@@name=intromod.name
 			@@university=intromod.university
 			@@email=intromod.email
 			@@phone=intromod.phone
 			@@intro=intromod.intro
-			@@link_home=LinkLang.where("lang='"+$langUsed.to_s+"' and types='home'").link
-			@@link_work=LinkLang.where("lang='"+$langUsed.to_s+"' and types='work'").link
-			@@link_interest=LinkLang.where("lang='"+$langUsed.to_s+"' and types='interest'").link
+			@@link_home=LinkLang.where("lang='"+$langUsed.to_s+"' and types='home'")[0].link
+			@@link_work=LinkLang.where("lang='"+$langUsed.to_s+"' and types='work'")[0].link
+			@@link_interest=LinkLang.where("lang='"+$langUsed.to_s+"' and types='interest'")[0].link
 		end
 
 		def get_name()
@@ -90,5 +90,13 @@ module HomeHelper
 		def switch_lang(lang)
 			$langUsed=lang
 			@@name=nil
+			@@link_home=nil
+		end
+
+		def appendUrl(url,lang)
+			if url.end_with?('/')!=true
+				url=url+'/'
+			end
+			url+lang
 		end
 end
