@@ -20,15 +20,15 @@ module HomeHelper
 		@@link_interest=nil
 
 		def initializer()
-			intromod=SelfIntro.where("lang="+$langUsed.to_s)
+			intromod=SelfIntro.where("lang='"+$langUsed.to_s+"'")
 			@@name=intromod.name
 			@@university=intromod.university
 			@@email=intromod.email
 			@@phone=intromod.phone
 			@@intro=intromod.intro
-			@@link_home=LinkLang.where("lang="+$langUsed.to_s+" and types='home'").link
-			@@link_work=LinkLang.where("lang="+$langUsed.to_s+" and types='work'").link
-			@@link_interest=LinkLang.where("lang="+$langUsed.to_s+" and types='interest'").link
+			@@link_home=LinkLang.where("lang='"+$langUsed.to_s+"' and types='home'").link
+			@@link_work=LinkLang.where("lang='"+$langUsed.to_s+"' and types='work'").link
+			@@link_interest=LinkLang.where("lang='"+$langUsed.to_s+"' and types='interest'").link
 		end
 
 		def get_name()
