@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'work' => 'home#work'
   get 'interest' => 'home#interest'
   get '/:lang' => 'home#index'
+  get '/index/:lang' => 'home#index'
+  get '/work/:lang' => 'home#work'
+  get '/interest/:lang' => 'home#interest'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
