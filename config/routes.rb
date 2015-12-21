@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'index/' => 'home#index'
   get 'work/' => 'home#work'
   get 'interest/' => 'home#interest'
+
+  #Language settings
   get '/index/:lang' => 'home#index'
   get '/work/:lang' => 'home#work'
   get '/interest/:lang' => 'home#interest'

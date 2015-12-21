@@ -99,4 +99,8 @@ module HomeHelper
 			end
 			url+lang
 		end
+
+		def show_works()
+			@works=WorkInfo.where("lang='"+$langUsed+"'")
+		end
 end

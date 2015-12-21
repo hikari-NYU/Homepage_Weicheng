@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  work_id: 1
+  name: MyString
+  link: MyString
+  description: MyString
+  note: MyString
+  lang: MyString
+
+two:
+  work_id: 1
+  name: MyString
+  link: MyString
+  description: MyString
+  note: MyString
+  lang: MyString

@@ -1,1 +1,13 @@
 <% provide(:title,"Work") %>
+<div id='works'>
+		<div id='work_list'>
+			<% show_works() %>
+			<% @works.each { |r| %>
+			<div class='work_block'>
+				<p class='title'><%= r.name %></p>
+				<p class='description'><%= r.description %></p>
+				<%= link_to 'Codes',r.link %>
+			</div>
+			<% } %>
+		</div>
+</div>

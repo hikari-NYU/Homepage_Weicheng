@@ -27,8 +27,11 @@ $(document).on('click','#home_link',function (event){
 	var source=document.getElementById('title').innerText;
 	source=source.substring(0,source.indexOf('|'));
 	var destination="Home";
+	$('#load_cover').css("z-index","10");
 	$('#load_cover').css("opacity","1.0");
 	$('#load_cover').css("backgroundColor","white");
+	$('#load_cover').css("width","100%");
+	$('#load_cover').css("height","100%");
 	var msg="> Leaving "+source+"; Heading "+destination;
 	var i=0;
 	var c = document.getElementById("load_cover");
@@ -48,6 +51,9 @@ $(document).on('click','#home_link',function (event){
 				}
 				if(j>1) {
 					$('#load_cover').css("opacity","0.0");
+					$('#load_cover').css("z-index","0");
+					$('#load_cover').css("width","0%");
+					$('#load_cover').css("height","0%");
 					clearInterval(sid);
 				}
 			},100);
@@ -60,8 +66,11 @@ $(document).on('click','#work_link',function (event){
 	var source=document.getElementById('title').innerText;
 	source=source.substring(0,source.indexOf('|'));
 	var destination="Work";
+	$('#load_cover').css("z-index","10");
 	$('#load_cover').css("opacity","1.0");
 	$('#load_cover').css("backgroundColor","white");
+	$('#load_cover').css("width","100%");
+	$('#load_cover').css("height","100%");
 	var msg="> Leaving "+source+"; Heading "+destination;
 	var i=0;
 	var c = document.getElementById("load_cover");
@@ -81,6 +90,9 @@ $(document).on('click','#work_link',function (event){
 				}
 				if(j>1) {
 					$('#load_cover').css("opacity","0.0");
+					$('#load_cover').css("z-index","0");
+					$('#load_cover').css("width","0%");
+					$('#load_cover').css("height","0%");
 					clearInterval(sid);
 				}
 			},100);
@@ -93,8 +105,11 @@ $(document).on('click','#interest_link',function (event){
 	var source=document.getElementById('title').innerText;
 	source=source.substring(0,source.indexOf('|'));
 	var destination="Interest";
+	$('#load_cover').css("z-index","10");
 	$('#load_cover').css("opacity","1.0");
 	$('#load_cover').css("backgroundColor","white");
+	$('#load_cover').css("width","100%");
+	$('#load_cover').css("height","100%");
 	var msg="> Leaving "+source+"; Heading "+destination;
 	var i=0;
 	var c = document.getElementById("load_cover");
@@ -114,6 +129,9 @@ $(document).on('click','#interest_link',function (event){
 				}
 				if(j>1) {
 					$('#load_cover').css("opacity","0.0");
+					$('#load_cover').css("z-index","0");
+					$('#load_cover').css("width","0%");
+					$('#load_cover').css("height","0%");
 					clearInterval(sid);
 				}
 			},100);
