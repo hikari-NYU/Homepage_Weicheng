@@ -1,6 +1,5 @@
 class CreateWorkInfos < ActiveRecord::Migration
   def change
-    drop_table :work_infos
     create_table :work_infos do |t|
       t.integer :work_id
       t.string :name
