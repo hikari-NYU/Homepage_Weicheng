@@ -143,6 +143,7 @@ $(document).on('click','#interest_link',function (event){
 	event.preventDefault();
 });
 
+(function() {
 		var displayapp=angular.module('displayapp',['ngAnimate']);
 		displayapp.controller('display_controller',['$scope',function($scope) {
 			$scope.reading_click=function() {
@@ -156,3 +157,4 @@ $(document).on('click','#interest_link',function (event){
 				$scope.disp_publication=false
 			}
 		}]);
+})();
