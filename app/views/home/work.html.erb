@@ -6,7 +6,6 @@
 	</ul>
 	<div class='display' ng-show='disp_reading' ng-animate="'animate'">
 		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
-		{{disp_reading}}
 		<table class='disp_list'>
 			<% show_readings() %>
 			<% @readings.each { |r| %>
@@ -18,7 +17,6 @@
 	</div>
 	<div class='display' ng-show='disp_publication' ng-animate="'animate'">
 		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
-		{{disp_publication}}
 		<table class='disp_list'>
 			<% show_publications() %>
 			<% @publications.each { |r| %>
