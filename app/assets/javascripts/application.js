@@ -144,6 +144,7 @@ $(document).on('click','#interest_link',function (event){
 });
 
 (function() {
+		var angular=require('angular');
 		var displayapp=angular.module('displayapp',['ngAnimate']);
 		displayapp.controller('display_controller',['$scope',function($scope) {
 			$scope.reading_click=function() {
