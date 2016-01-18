@@ -85,7 +85,6 @@ $(document).on('click','#work_link',function (event){
 		if(i>msg.length) {
 			var j=0;
 			var sid=setInterval(function() {
-				j=j+1;
 				if(++j==1) {
 					clearInterval(id);
 					window.location="work";
@@ -123,11 +122,10 @@ $(document).on('click','#interest_link',function (event){
 		if(i>msg.length) {
 			var j=0;
 			var sid=setInterval(function() {
-				j=j+1;
 				if(++j==1) {
 					clearInterval(id);
 					window.location="interest";
-				
+					
 					$('#load_cover').css("opacity","0.0");
 					$('#load_cover').css("z-index","0");
 					$('#load_cover').css("width","0%");
