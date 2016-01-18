@@ -42,13 +42,16 @@ $(document).on('click','#home_link',function (event){
 	var ctx = c.getContext("2d");
 	ctx.font = "25px Times";
 	var id=setInterval(function() {
-		sub=msg.slice(0,i);
+		if(i<=msg.length) {
+			sub=msg.slice(0,i);
+		}
+		else {
+			sub=msg;
+		}
 		ctx.fillText(sub,10,50);
 		i=i+1;
-		if(i>msg.length) {
-			var j=0;
-			var sid=setInterval(function() {
-				if(++j==1) {
+		if(i>msg.length+50) {
+			
 					clearInterval(id);
 					window.location="index";
 				
@@ -56,9 +59,7 @@ $(document).on('click','#home_link',function (event){
 					$('#load_cover').css("z-index","0");
 					$('#load_cover').css("width","0%");
 					$('#load_cover').css("height","0%");
-					clearInterval(sid);
-				}
-			},100);
+			
 		}
 	},30);
 	event.preventDefault();
@@ -79,13 +80,16 @@ $(document).on('click','#work_link',function (event){
 	var ctx = c.getContext("2d");
 	ctx.font = "25px Times";
 	var id=setInterval(function() {
-		sub=msg.slice(0,i);
+		if(i<=msg.length) {
+			sub=msg.slice(0,i);
+		}
+		else {
+			sub=msg;
+		}
 		ctx.fillText(sub,10,50);
 		i=i+1;
-		if(i>msg.length) {
-			var j=0;
-			var sid=setInterval(function() {
-				if(++j==1) {
+		if(i>msg.length+50) {
+
 					clearInterval(id);
 					window.location="work";
 				
@@ -93,9 +97,7 @@ $(document).on('click','#work_link',function (event){
 					$('#load_cover').css("z-index","0");
 					$('#load_cover').css("width","0%");
 					$('#load_cover').css("height","0%");
-					clearInterval(sid);
-				}
-			},100);
+
 		}
 	},30);
 	event.preventDefault();
@@ -116,13 +118,17 @@ $(document).on('click','#interest_link',function (event){
 	var ctx = c.getContext("2d");
 	ctx.font = "25px Times";
 	var id=setInterval(function() {
-		sub=msg.slice(0,i);
+		if(i<=msg.length) {
+			sub=msg.slice(0,i);
+		}
+		else {
+			sub=msg;
+		}
 		ctx.fillText(sub,10,50);
 		i=i+1;
-		if(i>msg.length) {
+		if(i>msg.length+50) {
 			var j=0;
-			var sid=setInterval(function() {
-				if(++j==1) {
+			
 					clearInterval(id);
 					window.location="interest";
 					
@@ -131,8 +137,7 @@ $(document).on('click','#interest_link',function (event){
 					$('#load_cover').css("width","0%");
 					$('#load_cover').css("height","0%");
 					clearInterval(sid);
-				}
-			},100);
+
 		}
 	},30);
 	event.preventDefault();
