@@ -103,4 +103,12 @@ module HomeHelper
 		def show_works()
 			@works=WorkInfo.where("lang='"+$langUsed+"'")
 		end
+
+		def show_readings()
+			@readings=Reading.order("create_at")
+		end
+
+		def show_publications()
+			@publications=Publication.all
+		end
 end

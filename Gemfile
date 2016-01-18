@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bower-rails'
+gem 'rake','10.4.2'
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -16,6 +18,9 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'sprockets', '2.12.3'
+gem 'angular-rails-templates'
+gem 'bower-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -47,9 +52,13 @@ end
 
 group :production do
   gem 'pg',	'0.17.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor', '0.0.2' 
+  gem 'angular-rails-templates'
+  gem 'bower-rails'
 end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'angular-rails-templates'
+  gem 'bower-rails'
 end

@@ -7,12 +7,19 @@
 #work_list {
 	text-align: left;
 	margin: 0px;
+	margin-top: 2%;
 	padding: 0px;
 	line-height: 1;
 	z-index: 9;
 	.work_block:hover {
 		background-color: #FFFFCC;
 	}
+	.work_block {
+		margin-top: 2%;
+	}
+	overflow-y:scroll;
+	position: absolute;
+	height: 60%;
 }
 
 #work_list .work_block .title {
@@ -27,4 +34,66 @@
 }
 #work_list .work_block a:hover {
 	font-color: purple;
+}
+#displays {
+	text-align: left;
+	margin:0px;
+	margin-top: 2%;
+	ul li {
+		list-style-type:none;
+		margin-left:-40px;
+	}
+}
+
+	.display {
+		position: absolute;
+		border: solid grey;
+		top:0%;
+		left:2%;
+		width:90%;
+		height:80%;
+		z-index:10;
+		background:white;
+		visible:true;
+		overflow-y:scroll;
+
+		.disp_close {
+			height:10px;
+			width:10px;
+			top:0px;
+			left:95%;
+			text-decoration:none;
+		}
+	}
+
+
+.display.ng-hide {
+			transition: all linear 10s;
+			width: 0%;
+			height: 0%;
+			top:0%;
+			left:0%;
+			background:transparent;
+		}
+
+
+.display.ng-hide-add, .display.ng-hide-remove {
+  transition: all linear 0.3s;
+}
+
+.disp_list {
+	margin-left: 1%;
+	border-collapse: separate;
+	border-spacing: 10px
+}
+
+.table_line {
+	width:100%;
+}
+
+.cell {
+	padding-right:1%;
+	margin-right:10px;
+	border-radius:5px;
+	background-color:#EFFBFB;
 }

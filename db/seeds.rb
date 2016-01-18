@@ -29,3 +29,7 @@ WorkInfo.create(work_id: 2, name: 'プログラミングサンプル　ー　ビ
 WorkInfo.create(work_id: 3, name: 'RSS Updator', link:'https://github.com/hikari-NYU/RSS-Updator', description:'The system gets news from RSS sources, and, when encountered with newer version of documented news, move the old one to obsolete list and replace it with the newly come one.', note:'', lang:'English')
 WorkInfo.create(work_id: 3, name: 'RSS新闻自动更新系统', link:'https://github.com/hikari-NYU/RSS-Updator', description:'本系统从RSS源读取新闻，并在遇到已归档新闻的更新时，将原版移入obsolete标签并用新版替换之。', note:'', lang:'Chinese')
 WorkInfo.create(work_id: 3, name: 'RSSニュースアップデーター', link:'https://github.com/hikari-NYU/RSS-Updator', description:'このシステムは、RSSからのニュースを整理することができます。その上、新しいバージョンがある時は、上書きして、そして古いバージョンをobsolete表に移動することもできます。', note:'', lang:'Japanese')
+Reading.delete_all
+Reading.create(author:'Hua He, Kevin Gimpel, and Jimmy Lin', title:'Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks', create_at:'01/16/2016')
+Publication.delete_all
+Publication.create(author:'Ma, W., Fan, Y., Shang, W., & Wu, F.', title:'A new method of page standardiza- tion based on DOM', time:'06/2012')

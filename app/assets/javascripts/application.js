@@ -10,10 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require angular-rails-templates
+//= require_tree ./templates
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require angular/angular
 //= require_tree .
+
 
 jQuery(window).load(function(){
 	$("#language").css("opacity","0.0");
@@ -139,3 +142,17 @@ $(document).on('click','#interest_link',function (event){
 	},30);
 	event.preventDefault();
 });
+
+		var displayapp=angular.module('displayapp',['ngAnimate']);
+		displayapp.controller('display_controller',['$scope',function($scope) {
+			$scope.reading_click=function() {
+				$scope.disp_reading=true;
+			}
+			$scope.publication_click=function() {
+				$scope.disp_publication=true;
+			}
+			$scope.close_click=function() {
+				$scope.disp_reading=false;
+				$scope.disp_publication=false
+			}
+		}]);
