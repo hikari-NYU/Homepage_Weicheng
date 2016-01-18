@@ -1,8 +1,8 @@
 <% provide(:title,"Work") %>
 <div id='displays' ng-app='displayapp' ng-controller='display_controller' ng-init='disp_reading=false;disp_publication=false;'>
 	<ul>
-		<li> <%= link_to 'Recent Reading List','', {'id'=>'show_reading','ng-model'=> 'disp_reading', 'ng-click'=>'reading_click()'}%> </li>
-		<li> <%= link_to 'Publications and Submissions','', {'id'=>'show_publication','ng-click'=>'publication_click()','ng-model'=>'disp_publication'}%> </li>
+		<li> <%= link_to get_link_reading(),'', {'id'=>'show_reading','ng-model'=> 'disp_reading', 'ng-click'=>'reading_click()'}%> </li>
+		<li> <%= link_to get_link_publication(),'', {'id'=>'show_publication','ng-click'=>'publication_click()','ng-model'=>'disp_publication'}%> </li>
 	</ul>
 	<div class='display' ng-show='disp_reading' ng-animate="'animate'">
 		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
