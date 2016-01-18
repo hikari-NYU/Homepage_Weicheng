@@ -96,12 +96,14 @@ module HomeHelper
 				initializer()
 			end
 			@@link_reading
+		end
 
 		def get_link_publication()
 			if @@link_publication==nil
 				initializer()
 			end
 			@@link_publication
+		end
 
 		def switch_lang(lang)
 			$langUsed=lang
