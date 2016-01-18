@@ -143,9 +143,8 @@ $(document).on('click','#interest_link',function (event){
 	event.preventDefault();
 });
 
-(function() {
-		var angular=require('angular');
 		var displayapp=angular.module('displayapp',['ngAnimate']);
+		displayapp.$inject = ['$scope'];
 		displayapp.controller('display_controller',['$scope',function($scope) {
 			$scope.reading_click=function() {
 				$scope.disp_reading=true;
@@ -158,4 +157,6 @@ $(document).on('click','#interest_link',function (event){
 				$scope.disp_publication=false
 			}
 		}]);
-})();
+		displayapp.config(['$compileProvider', function ($compileProvider) {
+  			$compileProvider.debugInfoEnabled(false);
+		}]);
