@@ -76,5 +76,17 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  lass NoCompression
+         def compress(string)
+             # do nothing
+             string
+         end
+     end
+
+     config.assets.compress = true
+     config.assets.js_compressor = NoCompression.new
+     config.assets.css_compressor = NoCompression.new
+
   config.assets.js_compressor = Uglifier.new(mangle: false)
 end
