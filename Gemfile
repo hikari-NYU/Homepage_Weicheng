@@ -53,12 +53,8 @@ end
 group :production do
   gem 'pg',	'0.17.1'
   gem 'rails_12factor', '0.0.2' 
-  gem 'angular-rails-templates'
-  gem 'bower-rails'
 end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'angular-rails-templates'
-  gem 'bower-rails'
 end
