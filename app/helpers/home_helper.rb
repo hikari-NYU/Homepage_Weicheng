@@ -78,28 +78,28 @@ module HomeHelper
 		end
 
 		def get_link_work()
-			if @@link_work==nil
+			if @@link_home==nil
 				initializer()
 			end
 			@@link_work
 		end
 
 		def get_link_interest()
-			if @@link_interest==nil
+			if @@link_home==nil
 				initializer()
 			end
 			@@link_interest
 		end
 
 		def get_link_reading()
-			if @@link_reading==nil
+			if @@link_home==nil
 				initializer()
 			end
 			@@link_reading
 		end
 
 		def get_link_publication()
-			if @@link_publication==nil
+			if @@link_home==nil
 				initializer()
 			end
 			@@link_publication
