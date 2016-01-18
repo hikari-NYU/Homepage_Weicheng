@@ -48,8 +48,7 @@ $(document).on('click','#home_link',function (event){
 		if(i>msg.length) {
 			var j=0;
 			var sid=setInterval(function() {
-				j=j+1;
-				if(j==1) {
+				if(++j==1) {
 					clearInterval(id);
 					window.location="index";
 				
@@ -87,7 +86,7 @@ $(document).on('click','#work_link',function (event){
 			var j=0;
 			var sid=setInterval(function() {
 				j=j+1;
-				if(j==1) {
+				if(++j==1) {
 					clearInterval(id);
 					window.location="work";
 				
@@ -125,7 +124,7 @@ $(document).on('click','#interest_link',function (event){
 			var j=0;
 			var sid=setInterval(function() {
 				j=j+1;
-				if(j==1) {
+				if(++j==1) {
 					clearInterval(id);
 					window.location="interest";
 				
