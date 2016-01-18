@@ -54,7 +54,8 @@ $(document).on('click','#home_link',function (event){
 			
 					clearInterval(id);
 					window.location="index";
-				
+		}
+		if(i>msg.length+51) {
 					$('#load_cover').css("opacity","0.0");
 					$('#load_cover').css("z-index","0");
 					$('#load_cover').css("width","0%");
@@ -92,7 +93,8 @@ $(document).on('click','#work_link',function (event){
 
 					clearInterval(id);
 					window.location="work";
-				
+		}
+		if(i>msg.length+51) {
 					$('#load_cover').css("opacity","0.0");
 					$('#load_cover').css("z-index","0");
 					$('#load_cover').css("width","0%");
@@ -131,7 +133,8 @@ $(document).on('click','#interest_link',function (event){
 			
 					clearInterval(id);
 					window.location="interest";
-					
+		}
+		if(i>msg.length+51) {
 					$('#load_cover').css("opacity","0.0");
 					$('#load_cover').css("z-index","0");
 					$('#load_cover').css("width","0%");
