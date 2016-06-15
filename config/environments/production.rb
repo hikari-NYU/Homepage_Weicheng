@@ -82,7 +82,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address              => 'smtp.gmail.com',
-    :port                 => 587,
+    :port                 => 465,
     :user_name            => 'weicheng.ma1991@gmail.com',
     :password             => 'SM0713tt',
     :authentication       => 'plain',
