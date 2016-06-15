@@ -1,0 +1,38 @@
+	<ul>
+		<li> <%= link_to get_link_reading(),'', {'id'=>'show_reading','ng-model'=> 'disp_reading', 'ng-click'=>'reading_click();hide_credential()'}%> </li>
+		<li> <%= link_to get_link_publication(),'', {'id'=>'show_publication','ng-click'=>'publication_click();hide_credential()','ng-model'=>'disp_publication'}%> </li>
+	</ul>
+	<div class='display' ng-show='disp_reading' ng-animate="'animate'">
+		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
+		<%= link_to 'manage', '', {'class'=>'credential','ng-click'=>'close_click();show_credential()'} %>
+		<table class='disp_list'>
+			<% show_readings() %>
+			<% @readings.each { |r| %>
+				<tr class='table_line'>
+					<td class='cell'><%= r.author %></td> <td class='cell'><%= r.title %></td>
+				</tr>
+			<% } %>
+		</table>
+	</div>
+	<div class='display' ng-show='disp_publication' ng-animate="'animate'">
+		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
+		<%= link_to 'manage', '', {'class'=>'credential','ng-click'=>'close_click();show_credential()'} %>
+		<table class='disp_list'>
+			<% show_publications() %>
+			<% @publications.each { |r| %>
+				<tr class='table_line'>
+					<td class='cell'><%= r.author %></td> <td class='cell'><%= r.title %></td><td class='cell'><%= r.time %></td>
+				</tr>
+			<% } %>
+		</table>
+	</div>
+	<div class='cred' ng-show='disp_cred' ng-animate="'animate'">
+		<center>
+			Password: <input type='text' id='pwd' ng-model='pwd'><br>
+			<button class='btn_pwd' ng-click='hide_credential();show_manage();'>Submit</button>
+			<button class='btn_pwd' ng-click='hide_credential();'>Cancel</button>
+		</center>
+	</div>
+	<div class='display' ng-show='disp_manage' ng-animate="'animate'">
+		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'hide_manage()'} %>
+	</div>

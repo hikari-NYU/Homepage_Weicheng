@@ -1,0 +1,101 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :s1 %><br>
+    <%= f.text_field :s1 %>
+  </div>
+  <div class="field">
+    <%= f.label :s2 %><br>
+    <%= f.text_field :s2 %>
+  </div>
+  <div class="field">
+    <%= f.label :s3 %><br>
+    <%= f.text_field :s3 %>
+  </div>
+  <div class="field">
+    <%= f.label :s4a %><br>
+    <%= f.text_field :s4a %>
+  </div>
+  <div class="field">
+    <%= f.label :s4b %><br>
+    <%= f.text_field :s4b %>
+  </div>
+  <div class="field">
+    <%= f.label :s4c %><br>
+    <%= f.text_field :s4c %>
+  </div>
+  <div class="field">
+    <%= f.label :s5a %><br>
+    <%= f.text_field :s5a %>
+  </div>
+  <div class="field">
+    <%= f.label :s5b %><br>
+    <%= f.text_field :s5b %>
+  </div>
+  <div class="field">
+    <%= f.label :s5c %><br>
+    <%= f.text_field :s5c %>
+  </div>
+  <div class="field">
+    <%= f.label :s6a %><br>
+    <%= f.text_field :s6a %>
+  </div>
+  <div class="field">
+    <%= f.label :s6b %><br>
+    <%= f.text_field :s6b %>
+  </div>
+  <div class="field">
+    <%= f.label :s6c %><br>
+    <%= f.text_field :s6c %>
+  </div>
+  <div class="field">
+    <%= f.label :s7a %><br>
+    <%= f.text_field :s7a %>
+  </div>
+  <div class="field">
+    <%= f.label :s7b %><br>
+    <%= f.text_field :s7b %>
+  </div>
+  <div class="field">
+    <%= f.label :s7c %><br>
+    <%= f.text_field :s7c %>
+  </div>
+  <div class="field">
+    <%= f.label :s8a %><br>
+    <%= f.text_field :s8a %>
+  </div>
+  <div class="field">
+    <%= f.label :s8b %><br>
+    <%= f.text_field :s8b %>
+  </div>
+  <div class="field">
+    <%= f.label :s8c %><br>
+    <%= f.text_field :s8c %>
+  </div>
+  <div class="field">
+    <%= f.label :s9 %><br>
+    <%= f.text_field :s9 %>
+  </div>
+  <div class="field">
+    <%= f.label :s10 %><br>
+    <%= f.text_field :s10 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

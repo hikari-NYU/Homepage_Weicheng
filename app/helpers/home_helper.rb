@@ -20,6 +20,7 @@ module HomeHelper
 		@@link_interest=nil
 		@@link_reading=nil
 		@@link_publication=nil
+		@@link_questionaire=nil
 
 		def initializer()
 			intromod=SelfIntro.where("lang='"+$langUsed.to_s+"'")[0]
@@ -33,6 +34,7 @@ module HomeHelper
 			@@link_interest=LinkLang.where("lang='"+$langUsed.to_s+"' and types='interest'")[0].link
 			@@link_reading=LinkLang.where("lang='"+$langUsed.to_s+"' and types='reading'")[0].link
 			@@link_publication=LinkLang.where("lang='"+$langUsed.to_s+"' and types='publication'")[0].link
+			@@link_questionaire=LinkLang.where("lang='"+$langUsed.to_s+"' and types='questionaire'")[0].link
 		end
 
 		def get_name()
@@ -103,6 +105,13 @@ module HomeHelper
 				initializer()
 			end
 			@@link_publication
+		end
+
+		def get_link_questionaire()
+			if @@link_home==nil
+				initializer()
+			end
+			@@link_questionaire
 		end
 
 		def switch_lang(lang)

@@ -14,6 +14,7 @@
 //= require_tree ./templates
 //= require jquery
 //= require jquery_ujs
+//= require async
 //= require angular/angular
 //= require angular-route/angular-route
 //= require_tree .
@@ -25,7 +26,6 @@ jQuery(window).load(function(){
 	$("#language").animate({"left":"40%",
 							"opacity":"1.0"},"slow");
 });
-
 
 $(document).on('click','#home_link',function (event){
 	var source=document.getElementById('title').innerText;
@@ -146,13 +146,34 @@ $(document).on('click','#interest_link',function (event){
 	event.preventDefault();
 });
 
-'use strict'
+$(document).on('click','#cancel_pwd',function(event) {
+	$('#pwd').val('');
+});
+
 		angular.module('displayapp',['ngAnimate','ngResource'])
 		.config(['$compileProvider', function ($compileProvider) {
   			$compileProvider.debugInfoEnabled(false);
 		}])
 		.controller('display_controller',['$scope',function($scope) {
 			self.$inject = ['$scope'];
+			$scope.show_credential=function() {
+				$scope.correct_pwd='hikariTGpass1';
+				$scope.pwd='';
+				$scope.disp_cred=true;
+			}
+			$scope.show_manage=function() {
+				if($scope.pwd==$scope.correct_pwd) {
+					$scope.disp_manage=true;
+					$scope.pwd='';
+				}
+				$scope.disp_cred=false;
+			}
+			$scope.hide_manage=function() {
+				$scope.disp_manage=false;
+			}
+			$scope.hide_credential=function() {
+				$scope.disp_cred=false;
+			}
 			$scope.reading_click=function() {
 				$scope.disp_reading=true;
 			}

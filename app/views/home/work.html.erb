@@ -1,34 +1,8 @@
 <% provide(:title,"Work") %>
-<div id='displays' ng-app='displayapp' ng-controller='display_controller' ng-init='disp_reading=false;disp_publication=false;'>
-	<ul>
-		<li> <%= link_to get_link_reading(),'', {'id'=>'show_reading','ng-model'=> 'disp_reading', 'ng-click'=>'reading_click()'}%> </li>
-		<li> <%= link_to get_link_publication(),'', {'id'=>'show_publication','ng-click'=>'publication_click()','ng-model'=>'disp_publication'}%> </li>
-	</ul>
-	<div class='display' ng-show='disp_reading' ng-animate="'animate'">
-		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
-		<table class='disp_list'>
-			<% show_readings() %>
-			<% @readings.each { |r| %>
-				<tr class='table_line'>
-					<td class='cell'><%= r.author %></td> <td class='cell'><%= r.title %></td>
-				</tr>
-			<% } %>
-		</table>
-	</div>
-	<div class='display' ng-show='disp_publication' ng-animate="'animate'">
-		<%= link_to 'close', '', {'class'=>'disp_close','ng-click'=>'close_click()'} %>
-		<table class='disp_list'>
-			<% show_publications() %>
-			<% @publications.each { |r| %>
-				<tr class='table_line'>
-					<td class='cell'><%= r.author %></td> <td class='cell'><%= r.title %></td><td class='cell'><%= r.time %></td>
-				</tr>
-			<% } %>
-		</table>
-	</div>
-</div>
-<div id='works'>
+<div id='displays' ng-app='displayapp' ng-controller='display_controller' ng-init='disp_reading=false;disp_publication=false;disp_cred=false;disp_modify=false;disp_manage=false;'>
+	<%= render 'layouts/work_updates' %>
 		<div id='work_list'>
+			<%= link_to 'Manage Codes', '', {'class'=>'credential','ng-click'=>'show_credential()'} %><br>
 			<% show_works() %>
 			<% @works.each { |r| %>
 			<div class='work_block'>

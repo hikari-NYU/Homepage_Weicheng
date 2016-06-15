@@ -81,6 +81,30 @@
   transition: all linear 0.3s;
 }
 
+.cred {
+	position: absolute;
+	border: solid grey;
+	top:25%;
+	left:25%;
+	width:40%;
+	height:20%;
+	z-index:11;
+	background:white;
+}
+
+.cred.ng-hide {
+	transition: all linear 10s;
+	width:0%;
+	height:0%;
+	top:0%;
+	left:25%;
+	background:transparent;
+}
+
+.cred.ng-hide-add, .cred.ng-hide-remove {
+	transition: all linear 0.1s;
+}
+
 .disp_list {
 	margin-left: 1%;
 	border-collapse: separate;
@@ -97,4 +121,12 @@
 	margin-right:10px;
 	border-radius:5px;
 	background-color:#EFFBFB;
+}
+
+#pwd {
+	
+}
+
+.btn_pwd {
+	
 }

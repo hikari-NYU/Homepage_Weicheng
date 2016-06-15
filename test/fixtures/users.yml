@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  s1: MyString
+  s2: MyString
+  s3: MyString
+  s4a: MyString
+  s4b: MyString
+  s4c: MyString
+  s5a: MyString
+  s5b: MyString
+  s5c: MyString
+  s6a: MyString
+  s6b: MyString
+  s6c: MyString
+  s7a: MyString
+  s7b: MyString
+  s7c: MyString
+  s8a: MyString
+  s8b: MyString
+  s8c: MyString
+  s9: MyString
+  s10: MyString
+
+two:
+  uid: MyString
+  s1: MyString
+  s2: MyString
+  s3: MyString
+  s4a: MyString
+  s4b: MyString
+  s4c: MyString
+  s5a: MyString
+  s5b: MyString
+  s5c: MyString
+  s6a: MyString
+  s6b: MyString
+  s6c: MyString
+  s7a: MyString
+  s7b: MyString
+  s7c: MyString
+  s8a: MyString
+  s8b: MyString
+  s8c: MyString
+  s9: MyString
+  s10: MyString

@@ -41,6 +41,8 @@ GEM
       sprockets (~> 2)
       tilt
     arel (6.0.3)
+    async-rails (1.5.2)
+      railties (>= 3.1)
     autoprefixer-rails (6.3.1)
       execjs
       json
@@ -167,6 +169,7 @@ PLATFORMS
 
 DEPENDENCIES
   angular-rails-templates
+  async-rails
   bootstrap-sass
   bower-rails
   byebug

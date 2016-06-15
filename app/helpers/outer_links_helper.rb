@@ -1,0 +1,2 @@
+module OuterLinksHelper
+end

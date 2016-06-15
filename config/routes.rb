@@ -1,14 +1,24 @@
 Rails.application.routes.draw do
 
+  resources :users
+  get 'outer_links/upload'
+
+  get 'home/manage'
+
   root 'home#index'
   get 'index/' => 'home#index'
   get 'work/' => 'home#work'
   get 'interest/' => 'home#interest'
+  get 'questionaire/'=>'outer_links#questionaire'
+  post 'upload/'=>'outer_links#questionaire'
+  post 'questionaire/'=>'users#create'
 
   #Language settings
   get '/index/:lang' => 'home#index'
   get '/work/:lang' => 'home#work'
   get '/interest/:lang' => 'home#interest'
+  get '/questionaire/:lang' => 'outer_links#questionaire'
+  post '/upload/:lang' => 'outer_links#questionaire'
   get '/:lang' => 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

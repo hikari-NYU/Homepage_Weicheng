@@ -18,6 +18,7 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'async-rails'
 gem 'sprockets', '2.12.3'
 gem 'angular-rails-templates'
 gem 'bower-rails'

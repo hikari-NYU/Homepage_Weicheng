@@ -1,0 +1,99 @@
+<% provide(:title, "Questionaire") %>
+<div id='mainframe'>
+	<div class='selection'>
+		<%= form_for(:user) do |f| %>
+		  <li><%= f.label(:s1, "1. What is your age?") %></li>
+		  <li><%= f.radio_button(:age, "0-7") %>
+		  <%= f.label(:age_1, "0-7") %></li>
+		  <li><%= f.radio_button(:age, "8-13") %>
+		  <%= f.label(:age_2, "8-13") %></li>
+		  <li><%= f.radio_button(:age, "14-17") %>
+		  <%= f.label(:age_3, "14-17") %></li>
+		  <li><%= f.radio_button(:age, "18-24") %>
+		  <%= f.label(:age_4, "18-24") %></li>
+		  <li><%= f.radio_button(:age, "25-30") %>
+		  <%= f.label(:age_5, "25-30") %></li>
+		  <li><%= f.radio_button(:age, "31-40") %>
+		  <%= f.label(:age_6, "31-40") %></li>
+		  <li><%= f.radio_button(:age, "41-44") %>
+		  <%= f.label(:age_7, "41-44") %></li>
+		  <li><%= f.radio_button(:age, "45-54") %>
+		  <%= f.label(:age_8, "45-54") %></li>
+		  <li><%= f.radio_button(:age, "55-64") %>
+		  <%= f.label(:age_9, "55-64") %></li>
+		  <li><%= f.radio_button(:age, "65-74") %>
+		  <%= f.label(:age_10, "65-74") %></li>
+		  <li><%= f.radio_button(:age, "75 or older") %>
+		  <%= f.label(:age_11, "75 or older") %></li>
+		
+		  <li><%= f.label(:s2, "2. What is your physical gender?") %></li>
+		  <li><%= f.radio_button(:gender, "Male") %>
+		  <%= f.label(:gender_1, "Male") %></li>
+		  <li><%= f.radio_button(:gender, "Female") %>
+		  <%= f.label(:gender_2, "Female") %></li>
+		  <li><%= f.radio_button(:gender, "Unknown") %>
+		  <%= f.label(:gender_3, "Prefer not to tell") %></li>
+		
+		  <li><%= f.label(:s3, "3. Do you have any illness?") %></li>
+		  <li><%= f.radio_button(:disease, "No") %>
+		  <%= f.label(:disease_1, "Not at all") %></li>
+		  <li><%= f.radio_button(:disease, "Heart") %>
+		  <%= f.label(:disease_2, "Heart related disease") %></li>
+		  <li><%= f.radio_button(:disease, "Liver") %>
+		  <%= f.label(:disease_3, "Liver related disease") %></li>
+		  <li><%= f.radio_button(:disease, "Stomach") %>
+		  <%= f.label(:disease_4, "Stomach related disease") %></li>
+		  <li><%= f.radio_button(:disease, "Kidney") %>
+		  <%= f.label(:disease_5, "Kidney related disease") %></li>
+		  <li><%= f.radio_button(:disease, "Lung") %>
+		  <%= f.label(:disease_6, "Lung related disease") %></li>
+		
+		  <%= f.label(:s4, "4. What's your heart rate(x/min) in the morning(8am-11am), during the day(11am-5pm), and in the evening(5pm-12am), respectively?") %>
+		  <li><%= f.label(:heartrate_1, "Morning") %>
+		  <%= f.text_field :heartrate_morning %></li>
+		  <li><%= f.label(:heartrate_2, "Noon") %>
+		  <%= f.text_field :heartrate_noon %></li>
+		  <li><%= f.label(:heartrate_3, "Night") %>
+		  <%= f.text_field :heartrate_night %></li>
+		
+		  <%= f.label(:s5, "5. What's your body temperature(Celcius) in the morning(8am-11am), during the day(11am-5pm), and in the evening(5pm-12am), respectively?") %>
+		  <li><%= f.label(:temp_1, "Morning") %>
+		  <%= f.text_field(:temp_morning) %></li>
+		  <li><%= f.label(:temp_2, "Noon") %>
+		  <%= f.text_field(:temp_noon) %></li>
+		  <li><%= f.label(:temp_3, "Night") %>
+		  <%= f.text_field(:temp_night) %></li>
+		
+		  <%= f.label(:s6, "6. What's your respiration rate(x/min) in the morning(8am-11am), during the day(11am-5pm), and in the evening(5pm-12am), respectively?") %>
+		  <li><%= f.label(:resp_1, "Morning") %>
+		  <%= f.text_field(:resp_morning) %></li>
+		  <li><%= f.label(:resp_2, "Noon") %>
+		  <%= f.text_field(:resp_noon) %></li>
+		  <li><%= f.label(:resp_3, "Night") %>
+		  <%= f.text_field(:resp_night) %></li>
+		
+		  <%= f.label(:s7, "7. What's your blood pressure(mmHg) in the morning(8am-11am), during the day(11am-5pm), and in the evening(5pm-12am), respectively?") %>
+		  <li><%= f.label(:bp_1, "Morning") %>
+		  <%= f.text_field(:bp_morning) %></li>
+		  <li><%= f.label(:bp_2, "Noon") %>
+		  <%= f.text_field(:bp_noon) %></li>
+		  <li><%= f.label(:bp_3, "Night") %>
+		  <%= f.text_field(:bp_night) %></li>
+		
+		  <%= f.label(:s8, "8. What's your SPO2 in the morning(8am-11am), during the day(11am-5pm), and in the evening(5pm-12am), respectively?(Preferred)") %>
+		  <li><%= f.label(:spo2_1, "Morning") %>
+		  <%= f.text_field(:spo2_morning) %></li>
+		  <li><%= f.label(:spo2_2, "Noon") %>
+		  <%= f.text_field(:spo2_noon) %></li>
+		  <li><%= f.label(:spo2_3, "Night") %>
+		  <%= f.text_field(:spo2_night) %></li>
+		
+			<%= f.label(:s9, "9. Please send us a video that your finger tip presses firmly on the lens with the flash on each time you test your heart rate. (Video for around 1 min) (Preferred)") %>
+			<%= f.file_field("file_video")%>
+	
+			<%= f.label(:s10, "10. Please send us an audio file recording your breathe for around 1 min, each time you test your respiration rate. (Preferred)") %>
+			<%= f.file_field("file_audio")%>
+		<%= f.submit "Submit my answers", :id=>'Qsubmit' %>
+		<% end %>
+	</div>
+</div>
