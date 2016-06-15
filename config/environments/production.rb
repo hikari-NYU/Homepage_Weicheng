@@ -86,7 +86,9 @@ Rails.application.configure do
     :user_name            => 'weicheng.ma1991@gmail.com',
     :password             => 'SM0713tt',
     :authentication       => 'plain',
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
+    :ssl                  => true,
+    :tls                  => true
   }
   config.action_mailer.default_url_options = { :host => 'weichengsite.herokuapp.com' }
 
