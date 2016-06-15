@@ -81,10 +81,10 @@ Rails.application.configure do
   config.assets.compress = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address              => 'smtp.qq.com',
+    :address              => 'smtp.gmail.com',
     :port                 => 587,
-    :user_name            => '609342658@qq.com',
-    :password             => 'SM0713tt',
+    :user_name            => 'wm724@nyu.edu',
+    :password             => '0628Melody',
     :authentication       => 'plain',
     :enable_starttls_auto => true
   }
