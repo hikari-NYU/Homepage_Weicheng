@@ -10,7 +10,7 @@ class QuestionMailer < ApplicationMailer
 	    if FileTest::exists?(@user.s10)
 			attachments['audio']=File.read(@user.s10)
 		end
-	    mail(to: @email, subject: 'Questionaire for User #'+@user.id.to_s)
+	    mail(from: 'weicheng.ma1991@gmail.com', to: @email, subject: 'Questionaire for User #'+@user.id.to_s)
 	    if File.exist?(@user.s9)  
 	       File.delete(@user.s9)  
 	    end
