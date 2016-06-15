@@ -3,7 +3,7 @@ class QuestionMailer < ApplicationMailer
  
 	def record_email(user)
 		@user = user
-	    @email = 'wm724@nyu.edu'
+	    @email = 'tjfw1@outlook.com'
 	    if FileTest::exists?(@user.s9)
 	    	attachments['video']=File.read(@user.s9)
 	    end
